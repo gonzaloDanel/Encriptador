@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h2 id="byGonzaloDanel" class="by">by Gonzalo Danel</h2>
+        <img id="alura" class="palabraAlura" src="aluraLatam.jpg" alt="palabra alura">
+        <img id="logo" class="logoAlura" src="Logo.png" alt="logo alura">
+        <img id="foto" class="fotoGonzalo" src="Tauro..jpg" alt="foto de gonzalo">
+    </header>
+    <main class="container">
+        <div class="ingresarTexto">
+            <div class="marcoTitulo">
+              <h1 class="titulo"> ENCRIPTADOR DE TEXTO</h1>
+            </div>
+            <h2 class="subtitulo">Convierte tus ✉️textos en comunicación 🔏segura a través del 🔑cifrado</h2>
+            <textarea  id="inputText" class="textArea  limpiar1" placeholder="Ingrese el texto aquí..."></textarea>
+            <p class="advertencia"> ❗Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+            <button onclick="convertAndReplace()" class="boton1"> 🔣 Encriptar</button>
+            <button onclick="limpiarTextArea()" class="limpiar"><img class="botonLimpiar" src="deshacer.png" alt="boton para limpiar textaera"></button>
+            <button onclick="convertAndReplace2()"  class="boton">  🔤  Desencriptar </button>
+        </div>
+        <div class="textoEncriptado">
+            <p id="outputText"></p>
+            <img class="imagenLupa" src="Muñeco.png" alt="muñeco de alura">
+            <div>
+                <p class="mensajeLupa1">Ningún mensaje fue <br>encontrado</p>
+                <p class="mensajeLupa2">Por favor ingrese el texto que desees <br>
+                encriptar o desencriptar.</p>
+            </div>
+        </div>
+    </main>
+    <script src="javaScript.js"></script>
+</body>
+</html>
